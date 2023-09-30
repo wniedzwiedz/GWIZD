@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GWIZD</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="text_intervene">Widzisz zwierzę potrzebujące pomocy? Zgłoś to oznaczając miejsce i opisując rodzaj pomocy jakiej zwierzak potrzebuje. Możesz też znaleźć tutaj informacje i kontakt do organizacji zajmujących się pomocą zwierzętom.</string>
+</resources>
