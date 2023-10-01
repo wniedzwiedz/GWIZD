@@ -8,22 +8,32 @@
     android:layout_gravity="center"
     android:paddingTop="?attr/actionBarSize">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="266dp"
-        android:layout_height="266dp"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="130dp"
-        tools:srcCompat="@mipmap/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="56dp">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="169dp"
-        android:layout_height="72dp"
-        android:layout_below="@+id/imageView"
-        android:onClick="to_main"
-        android:text="LOG IN"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="451dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="491dp"
+            android:layout_height="186dp"
+            app:srcCompat="@mipmap/logo" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="286dp"
+            android:layout_height="176dp"
+            app:srcCompat="@drawable/login"
+            android:onClick="to_main"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="169dp"
+            android:layout_height="72dp"
+            android:onClick="to_main"
+            android:text="LOG IN" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
