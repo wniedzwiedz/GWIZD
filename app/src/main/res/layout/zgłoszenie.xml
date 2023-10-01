@@ -44,40 +44,57 @@
 
     <!-- Content below header and above footer -->
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/content"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_above="@id/footer"
         android:layout_below="@id/header"
-        android:gravity="center" >
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button2"
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/button3"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="Zwierzę potrzebuje pomocy" />
+            android:src="@tools:sample/avatars" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/button4"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="Zwierzę może być zaginione" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button4"
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opis zgłoszenia..." />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_above="@id/button5"
-            android:text="Zwierzę stwarza zagrożenie" />
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dzikie" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Domowe" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gatunek" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/button5"
@@ -85,8 +102,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:text="Powrót"
-            android:onClick="to_main"/>
-    </RelativeLayout>
+            android:onClick="to_main"
+            android:text="Powrót" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -12,17 +12,22 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.example.gwizd.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class Interwencja extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.interwencja);
     }
 
-    public void to_interwencja(View view) {
-
-        Intent myIntent = new Intent(MainActivity.this,Interwencja.class);
+    public void to_main(View view) {
+        Intent myIntent = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(myIntent);
     }
+
+    public void to_interwencja_pomoc(View view) {
+        Intent myIntent = new Intent(getApplicationContext(), InterwencjaPomoc.class);
+        startActivity(myIntent);
+    }
+
 
 }
