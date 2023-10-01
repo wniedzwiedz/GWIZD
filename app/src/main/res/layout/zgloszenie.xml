@@ -109,6 +109,7 @@
                 android:id="@+id/switch1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="Użyj aktualnego czasu i lokalizacji"
                 android:textSize="18sp" />
 
@@ -134,7 +135,7 @@
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="150dp"
                 app:srcCompat="@drawable/mapka" />
 
             <Button
@@ -152,7 +153,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:onClick="to_interwencja_pomoc"
+                android:onClick="to_main"
                 android:text="Powrót" />
 
         </LinearLayout>

@@ -35,5 +35,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
+    public void to_okolica(View view) {
+        Intent myIntent = new Intent(getApplicationContext(),Okolica.class);
+        startActivity(myIntent);
+    }
+
 
 }

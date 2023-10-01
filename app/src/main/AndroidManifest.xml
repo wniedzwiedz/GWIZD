@@ -52,7 +52,14 @@
             android:name=".Potwierdzenie"
             android:exported="true">
         </activity>
-
+        <activity
+            android:name=".Okolica"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Mapa"
+            android:exported="true">
+        </activity>
 
 
 

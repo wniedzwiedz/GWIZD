@@ -12,11 +12,11 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.example.gwizd.databinding.ActivityMainBinding;
 
-public class Zgloszenie extends AppCompatActivity {
+public class Okolica extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zgloszenie);
+        setContentView(R.layout.okolica);
     }
 
     public void to_interwencja_pomoc(View view) {
@@ -36,6 +36,11 @@ public class Zgloszenie extends AppCompatActivity {
 
     public void to_profil(View view) {
         Intent myIntent = new Intent(getApplicationContext(), Profil.class);
+        startActivity(myIntent);
+    }
+
+    public void to_mapa(View view) {
+        Intent myIntent = new Intent(getApplicationContext(), Mapa.class);
         startActivity(myIntent);
     }
 
