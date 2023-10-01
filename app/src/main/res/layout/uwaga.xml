@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Header aligned to top -->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#009688"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Zachowaj ostrożność!"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+
+    <!-- Content below header and above footer -->
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:text="Przede wszystkim zadbaj o bezpieczeństwo swoje oraz innych osób znajdujących się w okolicy. Postaraj się oddalić od niebezpiecznego zwierzęcia i ostrzec innych. W razie potrzeby, możesz skontaktować się z kimś: zadzwon na numer 112."
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="192dp"
+            android:layout_height="87dp"
+            android:onClick="to_zgloszenie"
+            android:text="Przejdź do zgłoszenia" />
+
+    </LinearLayout>
+
+</RelativeLayout>

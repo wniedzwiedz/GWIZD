@@ -80,7 +80,7 @@
             android:layout_marginBottom="20dp"
             android:layout_above="@id/button5"
             android:text="Zwierzę stwarza zagrożenie"
-            android:onClick="to_zgloszenie"/>
+            android:onClick="to_uwaga"/>
 
         <Button
             android:id="@+id/button5"

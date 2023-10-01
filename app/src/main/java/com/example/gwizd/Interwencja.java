@@ -29,5 +29,11 @@ public class Interwencja extends AppCompatActivity {
         startActivity(myIntent);
     }
 
+    public void to_uwaga(View view) {
+
+        Intent myIntent = new Intent(getApplicationContext(),Uwaga.class);
+        startActivity(myIntent);
+    }
+
 
 }
