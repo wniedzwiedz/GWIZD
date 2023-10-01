@@ -22,7 +22,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            android:text="Nowe zgłoszenie"
+            android:text="Wysłano zgłoszenie"
             android:textColor="#000"
             android:textSize="20sp" />
 
@@ -53,6 +53,7 @@
             android:layout_marginRight="20dp"
             android:layout_toRightOf="@id/button7"
             android:text="Zgłoś"
+            android:onClick="to_main"
             />
 
         <Button
@@ -77,22 +78,15 @@
         android:layout_below="@id/header"
         android:gravity="center" >
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="192dp"
-            android:layout_height="87dp"
-            android:text="Obserwacja"
-            android:onClick="to_zgloszenie"/>
-
-        <Button
-            android:id="@+id/interwencja"
-            android:layout_width="192dp"
-            android:layout_height="87dp"
-            android:layout_below="@id/button9"
-            android:layout_marginTop="20dp"
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Interwencja"
-            android:onClick="to_interwencja"/>
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:text="Dziękujemy za twoje zaangażowanie. Twoje zgłoszenie zostało przekazane odpowiednim organom. Jeżeli chcesz, możesz skontaktować się z kimś pod numerem 123456789." />
+
     </RelativeLayout>
 
 </RelativeLayout>

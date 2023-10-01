@@ -4,19 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-import com.example.gwizd.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class Potwierdzenie extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.potwierdzenie);
     }
 
     public void to_interwencja(View view) {
@@ -34,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(getApplicationContext(),Profil.class);
         startActivity(myIntent);
     }
+    public void to_main(View view) {
+        Intent myIntent = new Intent(getApplicationContext(),MainActivity.class);
+        startActivity(myIntent);
+    }
+
 
 
 }

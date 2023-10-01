@@ -48,7 +48,6 @@
         android:id="@+id/content"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@id/footer"
         android:layout_below="@id/header"
         android:gravity="center" >
 
@@ -59,7 +58,8 @@
             android:layout_above="@id/button3"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:text="Zwierzę potrzebuje pomocy" />
+            android:text="Zwierzę potrzebuje pomocy"
+            android:onClick="to_interwencja_pomoc"/>
 
         <Button
             android:id="@+id/button3"
@@ -68,7 +68,8 @@
             android:layout_above="@id/button4"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:text="Zwierzę może być zaginione" />
+            android:text="Zwierzę może być zaginione"
+            />
 
         <Button
             android:id="@+id/button4"

@@ -2,7 +2,6 @@ package com.example.gwizd;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -13,15 +12,16 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.example.gwizd.databinding.ActivityMainBinding;
 
-public class InterwencjaPomoc extends AppCompatActivity {
+public class Obserwacja extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.interwencja_pomoc);
+        setContentView(R.layout.obserwacja);
     }
 
-    public void to_main(View view) {
-        Intent myIntent = new Intent(getApplicationContext(),MainActivity.class);
+    public void to_interwencja(View view) {
+
+        Intent myIntent = new Intent(getApplicationContext(),Interwencja.class);
         startActivity(myIntent);
     }
 
@@ -30,9 +30,8 @@ public class InterwencjaPomoc extends AppCompatActivity {
         startActivity(myIntent);
     }
 
-    public void to_interwencja(View view) {
-
-        Intent myIntent = new Intent(getApplicationContext(),Interwencja.class);
+    public void to_profil(View view) {
+        Intent myIntent = new Intent(getApplicationContext(),Profil.class);
         startActivity(myIntent);
     }
 

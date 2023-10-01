@@ -48,7 +48,6 @@
         android:id="@+id/content"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@id/footer"
         android:layout_below="@id/header"
         android:gravity="center" >
 
@@ -59,7 +58,8 @@
             android:layout_above="@id/button3"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:text="Zgłoś przemoc wobec zwierzęcia" />
+            android:text="Zgłoś przemoc wobec zwierzęcia"
+            android:onClick="to_zgloszenie"/>
 
         <Button
             android:id="@+id/button3"
@@ -68,6 +68,7 @@
             android:layout_above="@id/button4"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
+            android:onClick="to_zgloszenie"
             android:text="Zgłoś ranne, chore lub uwięzione zwierzę" />
 
         <Button
@@ -85,7 +86,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:text="Powrót" />
+            android:text="Powrót"
+            android:onClick="to_interwencja"/>
 
         <TextView
             android:id="@+id/textView3"
